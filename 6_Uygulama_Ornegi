@@ -1,0 +1,247 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Odev_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Uygulama 1
+
+            /*
+       
+            //   48/6/4
+            int a = (48 / 6)/ 4; //Hepsi Bölme operatörü olduğu için burada fark etmiyor.
+            Console.WriteLine("48/6/4 = "+a);
+           
+
+            //  24/3*2
+
+            int b = (24 / (3 * 2));
+            Console.WriteLine("24/3*2 = " + b);
+            
+
+            // 2²+5-1+4
+
+            int c = (Convert.ToInt16(Math.Pow(2, 2)) + (5 + -1 + 4));
+            Console.WriteLine("2²+5-1+4 = " + c);
+           
+
+            // (7+4) * 2-1 + 8/2
+
+            int d = ((7 + 4) * 2) - 1 + (8 / 2);
+            Console.WriteLine("(7+4) * 2-1 + 8/2 = " + d);
+            
+
+            // (5-1) * 2-1 + 7² /2
+
+            int f=5+(-1*2)-1 +Convert.ToInt16((Math.Pow(7,2)/2));
+            Console.WriteLine("(5-1) * 2-1 + 7² /2 = "+ f);
+
+            Console.ReadLine();
+
+
+            */
+            //************************************************************************************************//
+
+
+            /*
+            //Uygulama 2
+
+            int x = 20;
+            int y = 13;
+            int z = 42;
+
+            bool a = (23 == 55 && 76>45 && 5<12);
+            Console.WriteLine(a);
+            
+
+            bool b = (23 >= 23 && 45 != 18);
+            Console.WriteLine(b);
+
+
+            bool c = (x > y && z == y && z < x);
+            Console.WriteLine(c);
+
+
+            bool d = (z > x && y < x);
+            Console.WriteLine(d);
+
+
+            bool e = (z != x || y <= z);
+            Console.WriteLine(e);
+
+
+            Console.Read();
+            */
+
+
+            //************************************************************************************************//
+
+            //Uygulama 3
+
+
+            /*
+            Console.WriteLine("1.Sayıyı Girin: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("2.Sayıyı Girin: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            if (a % b == 0)
+            {
+                Console.WriteLine(a + " " + "Sayısı" + " " + b + " " + ".Sayısına tam bölünüyor");
+            }
+            else
+            {
+                Console.WriteLine(a + " " + "Sayısı" + " " + b + " " + "Sayısına tam bölünmüyor");
+            }
+
+            Console.Read();
+            */
+
+
+            //************************************************************************************************//
+
+            
+            
+            //Uygulama 4
+            //gg.aa.yyyy formatında girilen tarih bilgisinden hangi ayda olduğumuzu gösteren programı yazınız.
+            /*
+            string gg,yyyy,aa,aylar;
+            
+            Console.WriteLine("Günü Girin:");
+            gg = Console.ReadLine();
+
+            Console.WriteLine("Ayı Girin:");
+            aylar =Console.ReadLine();
+
+            Console.WriteLine("Yılı Girin:");
+            yyyy = Console.ReadLine();
+            aa = aylar;
+            switch (aylar)
+            {
+                case "01": Console.Write("Ocak");
+                    Console.WriteLine( gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "02": Console.Write("Şubat");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "03": Console.WriteLine("Mart");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "04": Console.WriteLine("Nisan");
+                    Console.WriteLine( gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "05": Console.WriteLine("Mayıs");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "06": Console.WriteLine("Haziran");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "08": Console.WriteLine("Ağustos");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "09": Console.WriteLine("Eylül");
+                    Console.WriteLine( gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                case "10": Console.WriteLine("Ekim");
+                    Console.WriteLine( gg + "/" + aa + "/" + yyyy);
+                    break;
+
+
+                case "11": Console.WriteLine("Ekim");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+
+                case "12": Console.WriteLine("Ekim");
+                    Console.WriteLine(gg + "/" + aa + "/" + yyyy);
+                    break;
+
+                default: Console.WriteLine("Lütfen Geçerli Bir Ay Seçin");
+                    break;
+                  
+            }
+            Console.Read();
+
+             
+            */
+
+
+
+            //************************************************************************************************//
+
+
+
+            /*
+            //Uygulama 5
+            //İkinci dereceden denklem köklerini bulan programı yazınız. 
+             
+
+            int a, b, c;
+            double delta,x1, x2;
+
+            Console.WriteLine("a'nın değeri: ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("b'nin değeri: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("c'nin değeri: ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            delta= b*b - 4*a*c;
+
+            if (delta > 0)
+            {
+                x1 = ((-1) * b - Math.Sqrt(delta)) / 2 * a;
+                x2 = ((-1) * b + Math.Sqrt(delta)) / 2 * a;
+                Console.WriteLine("Kök1: " + x1);
+                Console.WriteLine("Kök2: " + x2);
+            }
+            else if (delta==0)
+            {
+                Console.WriteLine("Kökler Eşit");
+            }
+            else
+            {
+                Console.WriteLine("Reel Kök Yok");
+            }
+            Console.ReadLine();
+             
+            */
+
+            //************************************************************************************************//
+
+            //Uygulama 6
+            //Girilen bir derece değerini radyan ve gradyan değerine çeviren programı yazınız.
+            /*
+            int derece, radyan, gradyan;
+            double pi = 3.14;
+
+            Console.WriteLine("Açıyı gir: ");
+            derece = Convert.ToInt32(Console.ReadLine());
+
+            radyan = Convert.ToInt32(derece * pi / 180);
+            gradyan = derece * 200 / 180;
+
+            Console.WriteLine("Radyan Değeri: " + radyan);
+            Console.WriteLine("Gradyan Değeri: " + gradyan);
+            Console.Read();
+            */
+        }
+    }
+}
